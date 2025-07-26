@@ -1,0 +1,4 @@
+venv/
+.env
+backend/uploaded_resumes/
+backend/uploads/

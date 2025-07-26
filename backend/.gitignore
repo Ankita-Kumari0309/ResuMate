@@ -1,0 +1,9 @@
+# dependencies
+/node_modules
+
+# dotenv files
+.env
+venv/
+__pycache__/
+backend/uploaded_resumes/
+backend/uploads/
