@@ -43,7 +43,7 @@ const Upload = () => {
     formData.append('email', auth.currentUser?.email || 'unknown');
 
     try {
-      const response = await axios.post('http://localhost:5000/upload_resume', formData);
+      const response = await axios.post('https://resumate-backend-m4vc.onrender.com/upload_resume', formData);
       const { llmAnalysis, resumeText, jobDescription } = response.data; 
 
       navigate('/result', {
