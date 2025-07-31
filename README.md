@@ -1,3 +1,11 @@
+
+<p align="center">
+  <a href="https://6885bf4fe7c47c0008525425--extraordinary-phoenix-e20b8a.netlify.app/" target="_blank">
+    <img src="https://img.shields.io/badge/View%20Live%20Demo-Click%20Here-blueviolet?style=for-the-badge&logo=firefox" alt="Demo Button"/>
+  </a>
+</p>
+
+
 # ResuMate – Your AI-Powered Resume Optimizer & Job Match Assistant
 “Bridging the gap between your resume and your dream job.”
 
@@ -103,3 +111,71 @@ ResuMate solves this problem by using LLMs (Gemini by Google) to analyze resumes
   11. User can download report as PDF or save it to history
 
 User can search for jobs and apply directly via the app
+
+
+# Folder Structure
+<img width="548" height="698" alt="image" src="https://github.com/user-attachments/assets/e564d7ab-e2bb-4cc8-bf25-2ad9b711088f" />
+
+## ScreenShots
+
+Landing Page
+
+<img width="1906" height="974" alt="Screenshot 2025-07-31 142424" src="https://github.com/user-attachments/assets/ea415550-01f4-4de9-975d-68149a915799" />
+
+Login Page
+
+<img width="748" height="619" alt="Screenshot 2025-07-31 142436" src="https://github.com/user-attachments/assets/3ac4b769-be0d-4c20-a4d7-d0c7d3533671" />
+
+Dashboard Page
+
+<img width="1916" height="975" alt="Screenshot 2025-07-31 142452" src="https://github.com/user-attachments/assets/6a19101f-b1a5-40a4-8589-c4e7868adc21" />
+
+Upload Page
+
+<img width="1918" height="924" alt="Screenshot 2025-07-31 142501" src="https://github.com/user-attachments/assets/a1037e14-1ce6-49f4-a13f-3fc3517f227d" />
+
+Records page 
+
+<img width="1915" height="979" alt="Screenshot 2025-07-31 142520" src="https://github.com/user-attachments/assets/1e4f7485-a4e3-4336-81f0-d0a8aa75efed" />
+
+Job Search
+
+<img width="1917" height="976" alt="Screenshot 2025-07-31 142534" src="https://github.com/user-attachments/assets/82dc9398-8810-4ee2-9361-faa5bc44d864" />
+
+Resume Analysis 
+
+<img width="1919" height="979" alt="Screenshot 2025-07-31 142600" src="https://github.com/user-attachments/assets/d34c7978-430d-45b5-b8b3-9737930382c1" />
+
+
+
+
+
+## Live Demo Link 
+
+https://6885bf4fe7c47c0008525425--extraordinary-phoenix-e20b8a.netlify.app/
+
+
+
+
+
+## 📄 How to Run Locally
+
+1. Clone the project
+2. git clone https://github.com/Ankita-Kumari0309/Resumate.git
+3. cd resumate
+
+#### Frontend setup
+1. cd frontend
+2. npm install
+3. npm start
+
+#### Backend setup
+1. cd ../backend
+2. pip install -r requirements.txt
+3. python app.py
+
+ ## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).  
+
+
