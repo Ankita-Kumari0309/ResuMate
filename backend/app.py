@@ -9,7 +9,8 @@ from LLMHandler import analyze_with_llm
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://6885bf4fe7c47c0008525425--extraordinary-phoenix-e20b8a.netlify.app"}}, supports_credentials=True)
+
 
 # Upload folder setup
 UPLOAD_FOLDER = 'uploads'
