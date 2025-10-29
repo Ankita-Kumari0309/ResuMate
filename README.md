@@ -1,6 +1,6 @@
 
 <p align="center">
-  <a href="https://6885bf4fe7c47c0008525425--extraordinary-phoenix-e20b8a.netlify.app/" target="_blank">
+  <a href="https://extraordinary-phoenix-e20b8a.netlify.app/" target="_blank">
     <img src="https://img.shields.io/badge/View%20Live%20Demo-Click%20Here-blueviolet?style=for-the-badge&logo=firefox" alt="Demo Button"/>
   </a>
 </p>
