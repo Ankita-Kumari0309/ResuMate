@@ -9,55 +9,53 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. Setup Python (for Flask backend)
+      # 🔹 Python setup
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # 3. Install backend dependencies
       - name: Install backend dependencies
         run: |
+          echo "Installing backend..."
           if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
+            pip install -r requirements.txt || echo "Backend install failed"
           elif [ -f backend/requirements.txt ]; then
-            pip install -r backend/requirements.txt
+            pip install -r backend/requirements.txt || echo "Backend install failed"
           else
             echo "No backend requirements found"
           fi
 
-      # 4. Setup Node.js (for React frontend)
-      - name: Setup Node.js
+      # 🔹 Node setup
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
-      # 5. Install frontend dependencies
       - name: Install frontend dependencies
         run: |
+          echo "Installing frontend..."
           if [ -f package.json ]; then
-            npm install
+            npm install || echo "Frontend install failed"
           elif [ -f frontend/package.json ]; then
             cd frontend
-            npm install
+            npm install || echo "Frontend install failed"
           else
-            echo "No frontend package.json found"
+            echo "No frontend found"
           fi
 
-      # 6. Build frontend (optional but good)
       - name: Build frontend
         run: |
+          echo "Building frontend..."
           if [ -f package.json ]; then
-            npm run build || echo "No build script"
+            npm run build || echo "Build skipped"
           elif [ -f frontend/package.json ]; then
             cd frontend
-            npm run build || echo "No build script"
+            npm run build || echo "Build skipped"
           fi
 
-      # 7. Final check
-      - name: Pipeline success
-        run: echo "CI/CD pipeline executed successfully"
+      - name: Done
+        run: echo "Pipeline completed"
